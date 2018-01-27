@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>login register page </title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript">
+   function onRegister()
+   {
+      var  userName = document.getElementById("username").value;
+	  var  password = document.getElementById("pass").value;
+      var  table = document.getElementById("table");
+	  var  newRow = table.insertRow();
+		  cell1 = newRow.insertCell(0),
+		  cell2 = newRow.insertCell(1);
+
+		  cell1.innerHTML = userName;
+		  cell2.innerHTML = password;
+		  
+		  
+		 
+	/*var userName = document.getElementById("username").value;
+    var passW = document.getElementById("pass").value;
+		
+		
+		var table = document.getElementById("myTable"),
+        newRow = table.insertRow(),
+        cell1 = newRow.insertCell(0),
+        cell2 = newRow.insertCell(1);
+        		
+        cell1.innerHTML = username;
+        cell2.innerHTML = pass;	
+		*/
+		
+		
+   }
+</script>
+</head>
+
+<body>
+  <div class="loginbox">
+   <img src="images/user1.png" class="user1">
+   <h2>Register Here</h2>
+   <form>
+    <p>Username</p>
+    <input type="text" id="username" placeholder="Enter the name">
+    <p>Password</p>
+    <input type="text" id="pass" placeholder="***************">
+	<p>Conform Password</p>
+    <input type="text"  id=" passs"placeholder="***************">
+	<input type="button" id="submit" value="Register" onclick="onRegister()">
+    <a href="loginpage.html">Sign In</a>
+   </form>
+  </div>
+   <table align='center' cellspacing=2 cellpadding=5 id="table" border=1>
+<tr>
+<th>Name</th>
+<th>Password</th>
+</tr>
+</table>
+
+
+</body>
+</html>
